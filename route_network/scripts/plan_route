@@ -69,6 +69,12 @@ class RoutePlannerNode():
         self.planner = None
         self._calc_idx = 0
 
+        # subscribe to route network
+        rospy.wait_for_message('route_network', RouteNetwork) # !!!ADDDED
+        self.sub = rospy.Subscriber('route_network', RouteNetwork,
+                                    self.graph_callback)
+
+
         # advertise route planning service
         self.srv = rospy.Service('get_route_plan', GetRoutePlan,
                                  self.route_planner)
@@ -76,9 +82,7 @@ class RoutePlannerNode():
         self.srv_geo = rospy.Service('get_geo_path', GetGeoPath, self.geo_path_planner)
         self.resp = None
 
-        # subscribe to route network
-        self.sub = rospy.Subscriber('route_network', RouteNetwork,
-                                    self.graph_callback)
+
 
     def graph_callback(self, graph):
         """ RouteNetwork graph message callback.
@@ -124,7 +128,7 @@ class RoutePlannerNode():
         :type req: geographic_msgs/GetGeoPath
 
         :return: The plan from start to goal position.
-        :rtype: geographic_msgs/GetGeoPathResponse 
+        :rtype: geographic_msgs/GetGeoPathResponse
         """
         rospy.loginfo('GetGeoPath: ' + str(req))
         self._calc_idx += 1
@@ -139,7 +143,7 @@ class RoutePlannerNode():
 
         try:
             planner_result = self.planner.geo_path(req)
-            
+
             self.resp.plan.poses = [GeoPoseStamped(pose=GeoPose(position=point)) for point in planner_result[0]]
             self.resp.network = planner_result[1]
             self.resp.start_seg = planner_result[2]
