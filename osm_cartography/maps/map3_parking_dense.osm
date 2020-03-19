@@ -10,7 +10,7 @@
   <node id='-276802' action='modify' visible='true' lat='42.48730164824' lon='-83.19695770807' />
   <node id='-276804' action='modify' visible='true' lat='42.48738935671' lon='-83.19689945322' />
   <node id='-276806' action='modify' visible='true' lat='42.48741618239' lon='-83.19683998362' />
-  <node id='-276810' action='modify' visible='true' lat='42.48742724643' lon='-83.19677183874' />
+  <node id='-276810' action='modify' visible='true' lat='42.48742922436' lon='-83.19677720316' />
   <node id='-276814' action='modify' visible='true' lat='42.48743157318' lon='-83.19670708858' />
   <node id='-276822' action='modify' visible='true' lat='42.48743237671' lon='-83.19646644414' />
   <node id='-276826' action='modify' visible='true' lat='42.48742866809' lon='-83.19642671393' />
@@ -36,7 +36,7 @@
   <node id='-277062' action='modify' visible='true' lat='42.48776942776' lon='-83.19707237251' />
   <node id='-277064' action='modify' visible='true' lat='42.48820357916' lon='-83.19708008353' />
   <node id='-277066' action='modify' visible='true' lat='42.48825698257' lon='-83.19704152677' />
-  <node id='-277084' action='modify' visible='true' lat='42.48743476862' lon='-83.19680898518' />
+  <node id='-277084' action='modify' visible='true' lat='42.48743476862' lon='-83.19682910175' />
   <node id='-277088' action='modify' visible='true' lat='42.48745241489' lon='-83.19684960515' />
   <node id='-277096' action='modify' visible='true' lat='42.48747781778' lon='-83.19687148883' />
   <node id='-277098' action='modify' visible='true' lat='42.48750317331' lon='-83.19688555567' />
@@ -885,7 +885,7 @@
     <nd ref='-276794' />
     <tag k='highway' v='residential' />
     <tag k='name' v='test road' />
-    <tag k='oneway' v='yes' />
+    <tag k='oneway' v='no' />
     <tag k='width' v='2' />
   </way>
   <way id='8672384' timestamp='2017-09-17T15:27:47Z' uid='306962' user='IanH' visible='true' version='8' changeset='52119969'>
