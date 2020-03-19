@@ -594,7 +594,6 @@
     <nd ref='-276810' />
     <tag k='highway' v='residential' />
     <tag k='name' v='test road' />
-    <tag k='oneway' v='yes' />
     <tag k='width' v='2' />
   </way>
   <way id='-277573' action='modify' visible='true'>
@@ -643,7 +642,6 @@
     <nd ref='-276908' />
     <tag k='highway' v='residential' />
     <tag k='name' v='test road' />
-    <tag k='oneway' v='no' />
     <tag k='width' v='4' />
   </way>
   <way id='-277574' action='modify' visible='true'>
@@ -844,7 +842,6 @@
     <nd ref='-277098' />
     <tag k='highway' v='residential' />
     <tag k='name' v='test road' />
-    <tag k='oneway' v='no' />
     <tag k='width' v='4' />
   </way>
   <way id='-291891' action='modify' visible='true'>
@@ -859,7 +856,6 @@
     <nd ref='-276908' />
     <tag k='highway' v='residential' />
     <tag k='name' v='test road' />
-    <tag k='oneway' v='no' />
     <tag k='width' v='4' />
   </way>
   <way id='-291895' action='modify' visible='true'>
@@ -885,7 +881,6 @@
     <nd ref='-276794' />
     <tag k='highway' v='residential' />
     <tag k='name' v='test road' />
-    <tag k='oneway' v='no' />
     <tag k='width' v='2' />
   </way>
   <way id='8672384' timestamp='2017-09-17T15:27:47Z' uid='306962' user='IanH' visible='true' version='8' changeset='52119969'>
